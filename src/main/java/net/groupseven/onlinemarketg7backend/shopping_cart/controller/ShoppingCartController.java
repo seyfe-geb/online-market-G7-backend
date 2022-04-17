@@ -1,15 +1,15 @@
 package net.groupseven.onlinemarketg7backend.shopping_cart.controller;
 
-import com.online.market.shopping_cart.dto.*;
-import com.online.market.shopping_cart.service.ShoppingCartService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.shopping_cart.dto.*;
+import net.groupseven.onlinemarketg7backend.shopping_cart.service.ShoppingCartService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Shopping Cart")
+//@Tag(name = "Shopping Cart")
 @RestController
 @RequestMapping(path = "shopping-cart")
 @RequiredArgsConstructor

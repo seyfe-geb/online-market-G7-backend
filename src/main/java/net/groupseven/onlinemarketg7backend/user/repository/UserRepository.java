@@ -1,7 +1,8 @@
 package net.groupseven.onlinemarketg7backend.user.repository;
 
-import com.online.market.user.dto.UnApprovedSellerDto;
-import com.online.market.user.model.User;
+
+import net.groupseven.onlinemarketg7backend.user.dto.UnApprovedSellerDto;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

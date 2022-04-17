@@ -1,6 +1,8 @@
 package net.groupseven.onlinemarketg7backend.shopping_cart.service;
 
-import com.online.market.shopping_cart.dto.*;
+
+
+import net.groupseven.onlinemarketg7backend.shopping_cart.dto.*;
 
 import java.util.List;
 

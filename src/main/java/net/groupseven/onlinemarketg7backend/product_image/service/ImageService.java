@@ -1,6 +1,8 @@
 package net.groupseven.onlinemarketg7backend.product_image.service;
 
-import com.online.market.product_image.dto.ImageDto;
+
+
+import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
 
 import java.util.List;
 

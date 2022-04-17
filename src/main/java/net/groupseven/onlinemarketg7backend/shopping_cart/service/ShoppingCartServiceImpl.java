@@ -1,11 +1,11 @@
 package net.groupseven.onlinemarketg7backend.shopping_cart.service;
 
-import com.online.market.shopping_cart.dto.*;
-import com.online.market.shopping_cart.model.ShoppingCart;
-import com.online.market.shopping_cart.model.ShoppingCartItem;
-import com.online.market.shopping_cart.repository.ShoppingCartRepository;
-import com.online.market.util.service.LoggedInUserService;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.shopping_cart.dto.*;
+import net.groupseven.onlinemarketg7backend.shopping_cart.model.ShoppingCart;
+import net.groupseven.onlinemarketg7backend.shopping_cart.model.ShoppingCartItem;
+import net.groupseven.onlinemarketg7backend.shopping_cart.repository.ShoppingCartRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

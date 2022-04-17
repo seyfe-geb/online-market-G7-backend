@@ -1,19 +1,17 @@
 package net.groupseven.onlinemarketg7backend.user.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.online.market.address.model.Address;
-import com.online.market.payment_method.model.PaymentMethod;
-import com.online.market.role.model.Role;
-import com.online.market.user.dto.UnApprovedSellerDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethod;
+import net.groupseven.onlinemarketg7backend.role.model.Role;
+import net.groupseven.onlinemarketg7backend.user.dto.UnApprovedSellerDto;
 import org.hibernate.annotations.Generated;
 import org.hibernate.annotations.GenerationTime;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
-import org.springframework.security.core.userdetails.UserDetails;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

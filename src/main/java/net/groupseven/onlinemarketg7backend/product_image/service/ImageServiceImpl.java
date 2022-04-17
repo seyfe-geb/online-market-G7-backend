@@ -1,8 +1,9 @@
 package net.groupseven.onlinemarketg7backend.product_image.service;
 
-import com.online.market.product_image.dto.ImageDto;
-import com.online.market.product_image.model.Image;
-import com.online.market.product_image.repository.ImageRepository;
+
+import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
+import net.groupseven.onlinemarketg7backend.product_image.model.Image;
+import net.groupseven.onlinemarketg7backend.product_image.repository.ImageRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

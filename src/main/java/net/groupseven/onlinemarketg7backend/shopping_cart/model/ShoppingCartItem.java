@@ -1,11 +1,11 @@
 package net.groupseven.onlinemarketg7backend.shopping_cart.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.online.market.product.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.product.model.Product;
 
 import javax.persistence.*;
 

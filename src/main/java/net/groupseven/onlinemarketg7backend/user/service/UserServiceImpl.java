@@ -1,19 +1,15 @@
 package net.groupseven.onlinemarketg7backend.user.service;
 
-import com.online.market.role.model.Role;
-import com.online.market.role.repository.RoleRepository;
-import com.online.market.shopping_cart.model.ShoppingCart;
-import com.online.market.shopping_cart.repository.ShoppingCartRepository;
-import com.online.market.user.dto.*;
-import com.online.market.user.model.User;
-import com.online.market.user.repository.UserRepository;
-import com.online.market.util.service.LoggedInUserService;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.role.model.Role;
+import net.groupseven.onlinemarketg7backend.role.repository.RoleRepository;
+import net.groupseven.onlinemarketg7backend.shopping_cart.model.ShoppingCart;
+import net.groupseven.onlinemarketg7backend.shopping_cart.repository.ShoppingCartRepository;
+import net.groupseven.onlinemarketg7backend.user.dto.*;
+import net.groupseven.onlinemarketg7backend.user.model.User;
+import net.groupseven.onlinemarketg7backend.user.repository.UserRepository;
 import org.modelmapper.ModelMapper;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
