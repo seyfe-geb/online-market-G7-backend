@@ -1,14 +1,14 @@
 package net.groupseven.onlinemarketg7backend.order.model;
 
+
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.online.market.address.model.Address;
-import com.online.market.payment_method.model.PaymentMethod;
-import com.online.market.user.model.User;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
+import lombok.Generated;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import org.hibernate.annotations.Generated;
+import net.groupseven.onlinemarketg7backend.address.model.Address;
+import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethod;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 import org.hibernate.annotations.GenerationTime;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -20,8 +20,7 @@ import java.util.Set;
 
 @Entity
 @Table(name = "orders")
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order implements Serializable {

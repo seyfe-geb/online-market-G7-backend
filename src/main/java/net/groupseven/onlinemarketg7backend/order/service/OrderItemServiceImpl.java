@@ -1,17 +1,16 @@
 package net.groupseven.onlinemarketg7backend.order.service;
 
-import com.online.market.order.dto.OrderItemDto;
-import com.online.market.order.dto.SaveOrderItemDto;
-import com.online.market.order.model.OrderItem;
-import com.online.market.order.repository.OrderItemRepository;
-import com.online.market.product.model.Product;
-import com.online.market.product.repository.ProductRepository;
-import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.validation.ValidationException;
+import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.order.dto.OrderItemDto;
+import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderItemDto;
+import net.groupseven.onlinemarketg7backend.order.model.OrderItem;
+import net.groupseven.onlinemarketg7backend.order.repository.OrderItemRepository;
+import net.groupseven.onlinemarketg7backend.product.model.Product;
+import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
+import org.springframework.stereotype.Service;
+
+import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.stream.Collectors;
 

@@ -1,10 +1,10 @@
 package net.groupseven.onlinemarketg7backend.payment_method.controller;
 
-import com.online.market.payment_method.dto.PaymentMethodDto;
-import com.online.market.payment_method.dto.SavePaymentMethodDto;
-import com.online.market.payment_method.service.PaymentMethodService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.SavePaymentMethodDto;
+import net.groupseven.onlinemarketg7backend.payment_method.service.PaymentMethodService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

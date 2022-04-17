@@ -1,14 +1,12 @@
 package net.groupseven.onlinemarketg7backend.order.dto;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 public class SaveOrderItemDto {
     private long id;
 
