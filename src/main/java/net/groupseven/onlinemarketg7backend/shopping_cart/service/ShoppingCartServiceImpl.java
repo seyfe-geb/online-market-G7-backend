@@ -6,6 +6,7 @@ import net.groupseven.onlinemarketg7backend.shopping_cart.dto.*;
 import net.groupseven.onlinemarketg7backend.shopping_cart.model.ShoppingCart;
 import net.groupseven.onlinemarketg7backend.shopping_cart.model.ShoppingCartItem;
 import net.groupseven.onlinemarketg7backend.shopping_cart.repository.ShoppingCartRepository;
+import net.groupseven.onlinemarketg7backend.util.service.LoggedInUserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     private final ShoppingCartRepository repository;
     private final ModelMapper modelMapper;
-    //private final LoggedInUserService loggedInUserService;
+    private final LoggedInUserService loggedInUserService;
 
     @Override
     public ShoppingCartDto findCart() {
