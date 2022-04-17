@@ -1,14 +1,16 @@
 package net.groupseven.onlinemarketg7backend.review.service;
 
-import com.online.market.review.dto.LightReviewDto;
-import com.online.market.review.dto.ReviewDto;
+
+import net.groupseven.onlinemarketg7backend.review.dto.LightReviewDto;
+import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
+import net.groupseven.onlinemarketg7backend.review.model.Review;
 
 import java.util.List;
 
 public interface ReviewService {
     List<ReviewDto> findAll();
 
-    List<ReviewDto> findAllByApproved(boolean approved);
+    List<Review> findAllByApproved(boolean approved);
 
     ReviewDto findById(long id);
 
@@ -18,5 +20,5 @@ public interface ReviewService {
 
     LightReviewDto updateById(long id, LightReviewDto dto);
 
-    ReviewDto approveById(long id);
+    Review approveById(long id);
 }

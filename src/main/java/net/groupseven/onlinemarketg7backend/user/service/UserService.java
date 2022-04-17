@@ -1,6 +1,7 @@
 package net.groupseven.onlinemarketg7backend.user.service;
 
-import com.online.market.user.dto.*;
+
+import net.groupseven.onlinemarketg7backend.user.dto.*;
 
 import java.util.List;
 

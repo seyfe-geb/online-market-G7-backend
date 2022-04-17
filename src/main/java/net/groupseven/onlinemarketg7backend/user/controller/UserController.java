@@ -1,15 +1,15 @@
 package net.groupseven.onlinemarketg7backend.user.controller;
 
-import com.online.market.user.dto.*;
-import com.online.market.user.service.UserService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.user.dto.*;
+import net.groupseven.onlinemarketg7backend.user.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Users")
+//@Tag(name = "Users")
 @RestController
 @RequestMapping(path = "users")
 @RequiredArgsConstructor

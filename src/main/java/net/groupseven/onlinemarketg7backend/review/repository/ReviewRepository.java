@@ -1,6 +1,6 @@
 package net.groupseven.onlinemarketg7backend.review.repository;
 
-import com.online.market.review.model.Review;
+import net.groupseven.onlinemarketg7backend.review.model.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

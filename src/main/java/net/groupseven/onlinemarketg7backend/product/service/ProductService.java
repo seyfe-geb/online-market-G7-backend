@@ -1,7 +1,8 @@
 package net.groupseven.onlinemarketg7backend.product.service;
 
-import com.online.market.product.dto.ProductDto;
-import com.online.market.product.dto.SaveProductDto;
+
+import net.groupseven.onlinemarketg7backend.product.dto.ProductDto;
+import net.groupseven.onlinemarketg7backend.product.dto.SaveProductDto;
 
 import javax.xml.bind.ValidationException;
 import java.util.List;

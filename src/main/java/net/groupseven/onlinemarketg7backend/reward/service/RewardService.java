@@ -1,7 +1,8 @@
 package net.groupseven.onlinemarketg7backend.reward.service;
 
-import com.online.market.reward.dto.RewardDto;
-import com.online.market.reward.dto.SaveRewardDto;
+
+import net.groupseven.onlinemarketg7backend.reward.dto.RewardDto;
+import net.groupseven.onlinemarketg7backend.reward.dto.SaveRewardDto;
 
 import java.util.List;
 

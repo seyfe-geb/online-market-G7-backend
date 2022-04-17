@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.user.dto;
 
-import com.online.market.role.dto.RoleDto;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.role.dto.RoleDto;
 
 import java.util.Date;
 import java.util.Set;

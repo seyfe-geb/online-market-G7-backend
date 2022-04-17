@@ -1,6 +1,7 @@
 package net.groupseven.onlinemarketg7backend.role.repository;
 
-import com.online.market.role.model.Role;
+
+import net.groupseven.onlinemarketg7backend.role.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
