@@ -1,23 +1,22 @@
 package net.groupseven.onlinemarketg7backend.order.dto;
 
+
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
 import net.groupseven.onlinemarketg7backend.order.model.OrderStatus;
 import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
 import net.groupseven.onlinemarketg7backend.user.dto.LightUserDto;
 
-import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
+@Data
 public class OrderDto {
 
     private long id;

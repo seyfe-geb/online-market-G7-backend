@@ -2,21 +2,20 @@ package net.groupseven.onlinemarketg7backend.payment_method.dto;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethodType;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+
 public class SavePaymentMethodDto {
-    @NotBlank
+
     private String name;
 
     @NotNull

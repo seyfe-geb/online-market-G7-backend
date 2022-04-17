@@ -1,9 +1,9 @@
 package net.groupseven.onlinemarketg7backend.order.model;
 
+
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.product.model.Product;
 
 import javax.persistence.*;
@@ -12,8 +12,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "order_items",
         uniqueConstraints={@UniqueConstraint(columnNames = {"product_id", "order_id"})})
-@Setter
-@Getter
+@Data
 @NoArgsConstructor
 public class OrderItem implements Serializable {
 

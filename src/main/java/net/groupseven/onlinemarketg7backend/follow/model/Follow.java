@@ -2,23 +2,21 @@ package net.groupseven.onlinemarketg7backend.follow.model;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.user.model.User;
 
 import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 @Table(name = "follows", uniqueConstraints={@UniqueConstraint(columnNames = {"follower_id", "followee_id"})})
 @Entity
 public class Follow {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private  Long id;
 
     @ManyToOne(fetch = FetchType.EAGER)
