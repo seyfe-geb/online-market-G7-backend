@@ -1,11 +1,12 @@
 package net.groupseven.onlinemarketg7backend.reward.model;
 
-import com.online.market.order.model.Order;
-import com.online.market.user.model.User;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.order.model.Order;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 
 import javax.persistence.*;
 import java.io.Serializable;

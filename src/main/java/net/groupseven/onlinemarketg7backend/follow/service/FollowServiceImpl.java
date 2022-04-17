@@ -1,12 +1,11 @@
 package net.groupseven.onlinemarketg7backend.follow.service;
 
-import com.online.market.follow.dto.CreateFollowerDto;
-import com.online.market.follow.dto.FollowDto;
-import com.online.market.follow.model.Follow;
-import com.online.market.follow.repository.FollowRepository;
-import com.online.market.user.model.User;
-import com.online.market.util.service.LoggedInUserService;
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.follow.dto.CreateFollowerDto;
+import net.groupseven.onlinemarketg7backend.follow.dto.FollowDto;
+import net.groupseven.onlinemarketg7backend.follow.model.Follow;
+import net.groupseven.onlinemarketg7backend.follow.repository.FollowRepository;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

@@ -1,14 +1,15 @@
 package net.groupseven.onlinemarketg7backend.product_image.controller;
 
-import com.online.market.product_image.dto.ImageDto;
-import com.online.market.product_image.service.ImageService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
+import net.groupseven.onlinemarketg7backend.product_image.service.ImageService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Product Images")
+//@Tag(name = "Product Images")
 @RestController
 @RequestMapping("/product-images")
 @RequiredArgsConstructor

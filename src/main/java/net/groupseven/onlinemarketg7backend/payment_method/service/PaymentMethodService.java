@@ -1,7 +1,9 @@
 package net.groupseven.onlinemarketg7backend.payment_method.service;
 
-import com.online.market.payment_method.dto.PaymentMethodDto;
-import com.online.market.payment_method.dto.SavePaymentMethodDto;
+
+
+import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.SavePaymentMethodDto;
 
 import java.util.List;
 

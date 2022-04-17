@@ -1,6 +1,8 @@
 package net.groupseven.onlinemarketg7backend.role.service;
 
-import com.online.market.role.dto.RoleDto;
+
+
+import net.groupseven.onlinemarketg7backend.role.dto.RoleDto;
 
 import java.util.List;
 

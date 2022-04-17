@@ -1,16 +1,14 @@
 package net.groupseven.onlinemarketg7backend.product.service;
 
-import com.online.market.order.model.OrderItem;
-import com.online.market.order.repository.OrderItemRepository;
-import com.online.market.product.dto.ProductDto;
-import com.online.market.product.dto.SaveProductDto;
-import com.online.market.product.model.Product;
-import com.online.market.product.repository.ProductRepository;
-import com.online.market.product_image.dto.ImageDto;
-import com.online.market.product_image.model.Image;
-import com.online.market.user.model.User;
-import com.online.market.util.service.LoggedInUserService;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.order.model.OrderItem;
+import net.groupseven.onlinemarketg7backend.order.repository.OrderItemRepository;
+import net.groupseven.onlinemarketg7backend.product.dto.ProductDto;
+import net.groupseven.onlinemarketg7backend.product.dto.SaveProductDto;
+import net.groupseven.onlinemarketg7backend.product.model.Product;
+import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
+import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

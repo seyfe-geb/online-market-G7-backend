@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.reward.service;
 
-import com.online.market.reward.dto.RewardDto;
-import com.online.market.reward.dto.SaveRewardDto;
-import com.online.market.reward.model.Reward;
-import com.online.market.reward.repository.RewardRepository;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.reward.dto.RewardDto;
+import net.groupseven.onlinemarketg7backend.reward.dto.SaveRewardDto;
+import net.groupseven.onlinemarketg7backend.reward.model.Reward;
+import net.groupseven.onlinemarketg7backend.reward.repository.RewardRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

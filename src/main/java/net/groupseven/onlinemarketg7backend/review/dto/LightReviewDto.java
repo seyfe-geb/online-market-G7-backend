@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.review.dto;
 
-import com.online.market.review.model.Rating;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.review.model.Rating;
 
 @NoArgsConstructor
 @AllArgsConstructor

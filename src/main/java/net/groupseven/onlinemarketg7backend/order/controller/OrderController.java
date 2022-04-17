@@ -1,18 +1,19 @@
 package net.groupseven.onlinemarketg7backend.order.controller;
 
-import com.online.market.order.dto.OrderDto;
-import com.online.market.order.dto.SaveOrderDto;
-import com.online.market.order.model.OrderStatus;
-import com.online.market.order.service.OrderService;
-import com.online.market.role.model.Role;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.access.prepost.PreAuthorize;
+import net.groupseven.onlinemarketg7backend.order.dto.OrderDto;
+import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderDto;
+import net.groupseven.onlinemarketg7backend.order.model.OrderStatus;
+import net.groupseven.onlinemarketg7backend.order.service.OrderService;
+import net.groupseven.onlinemarketg7backend.role.model.Role;
+//import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Orders")
+//@Tag(name = "Orders")
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
@@ -21,7 +22,7 @@ public class OrderController {
     private final OrderService service;
 
     @GetMapping
-    @PreAuthorize("hasRole('" + Role.ADMIN + "')")
+    //@PreAuthorize("hasRole('" + Role.ADMIN + "')")
     public List<OrderDto> getAll(){
         return service.findAll();
     }

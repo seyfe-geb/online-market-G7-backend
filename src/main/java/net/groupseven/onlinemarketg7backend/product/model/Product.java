@@ -1,13 +1,11 @@
 package net.groupseven.onlinemarketg7backend.product.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.online.market.product_image.model.Image;
-import com.online.market.review.model.Review;
-import com.online.market.user.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.review.model.Review;
 
 import javax.persistence.*;
 import java.io.Serializable;

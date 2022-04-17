@@ -1,12 +1,12 @@
 package net.groupseven.onlinemarketg7backend.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.online.market.address.dto.AddressDto;
-import com.online.market.payment_method.dto.PaymentMethodDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
 
 import java.util.List;
 

@@ -1,7 +1,9 @@
 package net.groupseven.onlinemarketg7backend.follow.service;
 
-import com.online.market.follow.dto.CreateFollowerDto;
-import com.online.market.follow.dto.FollowDto;
+
+
+import net.groupseven.onlinemarketg7backend.follow.dto.CreateFollowerDto;
+import net.groupseven.onlinemarketg7backend.follow.dto.FollowDto;
 
 import javax.xml.bind.ValidationException;
 import java.util.List;

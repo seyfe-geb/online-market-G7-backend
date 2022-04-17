@@ -1,11 +1,12 @@
 package net.groupseven.onlinemarketg7backend.reward.dto;
 
-import com.online.market.order.dto.OrderDto;
-import com.online.market.user.dto.LightUserDto;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.order.dto.OrderDto;
+import net.groupseven.onlinemarketg7backend.user.dto.LightUserDto;
 
 @AllArgsConstructor
 @NoArgsConstructor

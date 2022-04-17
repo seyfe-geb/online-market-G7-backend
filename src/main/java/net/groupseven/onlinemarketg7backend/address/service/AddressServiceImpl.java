@@ -1,11 +1,12 @@
 package net.groupseven.onlinemarketg7backend.address.service;
 
-import com.online.market.address.dto.AddressDto;
-import com.online.market.address.dto.SaveAddressDto;
-import com.online.market.address.model.Address;
-import com.online.market.address.repository.AddressRepository;
-import com.online.market.user.repository.UserRepository;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
+import net.groupseven.onlinemarketg7backend.address.dto.SaveAddressDto;
+import net.groupseven.onlinemarketg7backend.address.model.Address;
+import net.groupseven.onlinemarketg7backend.address.repository.AddressRepository;
+import net.groupseven.onlinemarketg7backend.user.repository.UserRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

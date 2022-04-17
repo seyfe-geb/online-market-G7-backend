@@ -1,20 +1,18 @@
 package net.groupseven.onlinemarketg7backend.order.service;
 
-import com.online.market.order.dto.OrderDto;
-import com.online.market.order.dto.SaveOrderDto;
-import com.online.market.order.model.Order;
-import com.online.market.order.model.OrderItem;
-import com.online.market.order.model.OrderStatus;
-import com.online.market.order.repository.OrderRepository;
-import com.online.market.product.model.Product;
-import com.online.market.product.repository.ProductRepository;
-import com.online.market.reward.model.Reward;
-import com.online.market.reward.repository.RewardRepository;
-import com.online.market.user.model.User;
-import com.online.market.util.service.EmailService;
-import com.online.market.util.service.HtmlToPdf;
-import com.online.market.util.service.LoggedInUserService;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.order.dto.OrderDto;
+import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderDto;
+import net.groupseven.onlinemarketg7backend.order.model.Order;
+import net.groupseven.onlinemarketg7backend.order.model.OrderItem;
+import net.groupseven.onlinemarketg7backend.order.model.OrderStatus;
+import net.groupseven.onlinemarketg7backend.order.repository.OrderRepository;
+import net.groupseven.onlinemarketg7backend.product.model.Product;
+import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
+import net.groupseven.onlinemarketg7backend.reward.model.Reward;
+import net.groupseven.onlinemarketg7backend.reward.repository.RewardRepository;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

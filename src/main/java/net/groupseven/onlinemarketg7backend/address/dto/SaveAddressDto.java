@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.address.dto;
 
-import com.online.market.address.model.AddressType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.address.model.AddressType;
 
 import javax.validation.constraints.NotBlank;
 

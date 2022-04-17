@@ -1,16 +1,17 @@
 package net.groupseven.onlinemarketg7backend.address.controller;
 
-import com.online.market.address.dto.AddressDto;
-import com.online.market.address.dto.SaveAddressDto;
-import com.online.market.address.service.AddressService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
+import net.groupseven.onlinemarketg7backend.address.dto.SaveAddressDto;
+import net.groupseven.onlinemarketg7backend.address.service.AddressService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Addresses")
+//@Tag(name = "Addresses")
 @RestController
 @RequestMapping(path = "user-addresses")
 @RequiredArgsConstructor

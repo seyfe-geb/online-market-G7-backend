@@ -1,7 +1,9 @@
 package net.groupseven.onlinemarketg7backend.address.service;
 
-import com.online.market.address.dto.AddressDto;
-import com.online.market.address.dto.SaveAddressDto;
+
+
+import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
+import net.groupseven.onlinemarketg7backend.address.dto.SaveAddressDto;
 
 import java.util.List;
 

@@ -6,6 +6,7 @@ import com.online.market.user.model.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 
 import javax.persistence.*;
 import java.io.Serializable;

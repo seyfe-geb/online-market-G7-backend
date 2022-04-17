@@ -1,8 +1,10 @@
 package net.groupseven.onlinemarketg7backend.order.service;
 
-import com.online.market.order.dto.OrderDto;
-import com.online.market.order.dto.SaveOrderDto;
-import com.online.market.order.model.OrderStatus;
+
+
+import net.groupseven.onlinemarketg7backend.order.dto.OrderDto;
+import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderDto;
+import net.groupseven.onlinemarketg7backend.order.model.OrderStatus;
 
 import javax.xml.bind.ValidationException;
 import java.util.List;

@@ -1,17 +1,16 @@
 package net.groupseven.onlinemarketg7backend.review.controller;
 
-import com.online.market.review.dto.LightReviewDto;
-import com.online.market.review.dto.ReviewDto;
-import com.online.market.review.service.ReviewService;
-import com.online.market.role.model.Role;
-import io.swagger.v3.oas.annotations.tags.Tag;
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.access.prepost.PreAuthorize;
+import net.groupseven.onlinemarketg7backend.review.dto.LightReviewDto;
+import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
+import net.groupseven.onlinemarketg7backend.review.service.ReviewService;
+import net.groupseven.onlinemarketg7backend.role.model.Role;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Reviews")
+//@Tag(name = "Reviews")
 @RestController
 @RequestMapping("/reviews")
 @RequiredArgsConstructor
@@ -25,7 +24,7 @@ public class ReviewController {
     }
 
     @GetMapping("/get-unapproved-reviews")
-    @PreAuthorize("hasRole('" + Role.ADMIN + "')")
+    //@PreAuthorize("hasRole('" + Role.ADMIN + "')")
     public List<ReviewDto> getUnapprovedReviews(){
         return reviewService.findAllByApproved(false);
     }

@@ -1,12 +1,12 @@
 package net.groupseven.onlinemarketg7backend.address.dto;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.online.market.address.model.AddressType;
-import com.online.market.user.dto.UserDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.address.model.AddressType;
+import net.groupseven.onlinemarketg7backend.user.dto.UserDto;
 
 import javax.validation.constraints.NotBlank;
 

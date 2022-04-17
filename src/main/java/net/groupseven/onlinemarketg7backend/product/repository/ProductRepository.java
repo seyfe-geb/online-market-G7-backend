@@ -1,6 +1,7 @@
 package net.groupseven.onlinemarketg7backend.product.repository;
 
-import com.online.market.product.model.Product;
+
+import net.groupseven.onlinemarketg7backend.product.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

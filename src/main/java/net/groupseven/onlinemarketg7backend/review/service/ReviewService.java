@@ -1,7 +1,9 @@
 package net.groupseven.onlinemarketg7backend.review.service;
 
-import com.online.market.review.dto.LightReviewDto;
-import com.online.market.review.dto.ReviewDto;
+
+
+import net.groupseven.onlinemarketg7backend.review.dto.LightReviewDto;
+import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
 
 import java.util.List;
 

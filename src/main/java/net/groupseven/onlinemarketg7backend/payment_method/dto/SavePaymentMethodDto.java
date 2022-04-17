@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.payment_method.dto;
 
-import com.online.market.payment_method.model.PaymentMethodType;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethodType;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;

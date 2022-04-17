@@ -1,6 +1,7 @@
 package net.groupseven.onlinemarketg7backend.order.repository;
 
-import com.online.market.order.model.OrderItem;
+
+import net.groupseven.onlinemarketg7backend.order.model.OrderItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

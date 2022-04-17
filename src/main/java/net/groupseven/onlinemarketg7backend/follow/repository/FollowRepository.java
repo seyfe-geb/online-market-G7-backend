@@ -1,6 +1,7 @@
 package net.groupseven.onlinemarketg7backend.follow.repository;
 
-import com.online.market.follow.model.Follow;
+
+import net.groupseven.onlinemarketg7backend.follow.model.Follow;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

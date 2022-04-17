@@ -1,13 +1,13 @@
 package net.groupseven.onlinemarketg7backend.product.dto;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import com.online.market.product_image.dto.ImageDto;
-import com.online.market.review.dto.ReviewDto;
-import com.online.market.user.dto.UserDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
+import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
+import net.groupseven.onlinemarketg7backend.user.dto.UserDto;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

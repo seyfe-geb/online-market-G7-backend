@@ -1,7 +1,9 @@
 package net.groupseven.onlinemarketg7backend.order.service;
 
-import com.online.market.order.dto.OrderItemDto;
-import com.online.market.order.dto.SaveOrderItemDto;
+
+
+import net.groupseven.onlinemarketg7backend.order.dto.OrderItemDto;
+import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderItemDto;
 
 import java.util.List;
 

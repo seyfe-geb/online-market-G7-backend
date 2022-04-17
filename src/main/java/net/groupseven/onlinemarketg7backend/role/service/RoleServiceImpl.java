@@ -1,11 +1,12 @@
 package net.groupseven.onlinemarketg7backend.role.service;
 
-import com.online.market.role.dto.RoleDto;
-import com.online.market.role.model.Role;
-import com.online.market.role.repository.RoleRepository;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.role.dto.RoleDto;
+import net.groupseven.onlinemarketg7backend.role.model.Role;
+import net.groupseven.onlinemarketg7backend.role.repository.RoleRepository;
 import org.modelmapper.ModelMapper;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

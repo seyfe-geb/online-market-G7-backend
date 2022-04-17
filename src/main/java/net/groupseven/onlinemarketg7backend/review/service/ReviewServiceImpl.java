@@ -1,11 +1,11 @@
 package net.groupseven.onlinemarketg7backend.review.service;
 
-import com.online.market.review.dto.LightReviewDto;
-import com.online.market.review.dto.ReviewDto;
-import com.online.market.review.model.Review;
-import com.online.market.review.repository.ReviewRepository;
-import com.online.market.util.service.LoggedInUserService;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.review.dto.LightReviewDto;
+import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
+import net.groupseven.onlinemarketg7backend.review.model.Review;
+import net.groupseven.onlinemarketg7backend.review.repository.ReviewRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

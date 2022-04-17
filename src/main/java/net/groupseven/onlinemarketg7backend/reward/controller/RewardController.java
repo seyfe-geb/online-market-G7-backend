@@ -1,16 +1,17 @@
 package net.groupseven.onlinemarketg7backend.reward.controller;
 
-import com.online.market.reward.dto.RewardDto;
-import com.online.market.reward.dto.SaveRewardDto;
-import com.online.market.reward.service.RewardService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
+//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.reward.dto.RewardDto;
+import net.groupseven.onlinemarketg7backend.reward.dto.SaveRewardDto;
+import net.groupseven.onlinemarketg7backend.reward.service.RewardService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Users Rewards")
+//@Tag(name = "Users Rewards")
 @RestController
 @RequestMapping(path = "users-rewards")
 @RequiredArgsConstructor
