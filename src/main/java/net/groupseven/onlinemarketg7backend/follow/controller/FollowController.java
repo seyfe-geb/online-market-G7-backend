@@ -1,17 +1,17 @@
 package net.groupseven.onlinemarketg7backend.follow.controller;
 
-import com.online.market.follow.dto.CreateFollowerDto;
-import com.online.market.follow.dto.FollowDto;
-import com.online.market.follow.service.FollowService;
-import io.swagger.v3.oas.annotations.tags.Tag;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.follow.dto.CreateFollowerDto;
+import net.groupseven.onlinemarketg7backend.follow.dto.FollowDto;
+import net.groupseven.onlinemarketg7backend.follow.service.FollowService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.xml.bind.ValidationException;
 import java.util.List;
 
-@Tag(name = "User Follows")
+//@Tag(name = "User Follows")
 @RestController
 @RequestMapping(path = "user-follows")
 @RequiredArgsConstructor

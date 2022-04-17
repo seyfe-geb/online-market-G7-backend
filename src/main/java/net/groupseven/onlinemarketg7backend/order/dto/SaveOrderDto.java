@@ -2,8 +2,11 @@ package net.groupseven.onlinemarketg7backend.order.dto;
 
 
 import com.sun.istack.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 @NoArgsConstructor

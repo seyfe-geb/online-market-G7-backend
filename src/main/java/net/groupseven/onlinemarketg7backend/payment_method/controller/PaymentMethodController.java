@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Payment Methods")
+//@Tag(name = "Payment Methods")
 @RestController
 @RequestMapping(path = "/payment-methods")
 @RequiredArgsConstructor

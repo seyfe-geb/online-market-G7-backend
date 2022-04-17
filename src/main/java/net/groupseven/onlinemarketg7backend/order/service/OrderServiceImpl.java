@@ -12,8 +12,11 @@ import net.groupseven.onlinemarketg7backend.product.model.Product;
 import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
 import net.groupseven.onlinemarketg7backend.reward.model.Reward;
 import net.groupseven.onlinemarketg7backend.reward.repository.RewardRepository;
+import net.groupseven.onlinemarketg7backend.user.model.User;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.stream.Collectors;

@@ -8,8 +8,10 @@ import net.groupseven.onlinemarketg7backend.order.model.OrderItem;
 import net.groupseven.onlinemarketg7backend.order.repository.OrderItemRepository;
 import net.groupseven.onlinemarketg7backend.product.model.Product;
 import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.stream.Collectors;

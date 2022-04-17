@@ -1,16 +1,12 @@
 package net.groupseven.onlinemarketg7backend.follow.dto;
 
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import javax.validation.constraints.NotNull;
-
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 public class CreateFollowerDto {
     @NotNull
     private  long followeeId;

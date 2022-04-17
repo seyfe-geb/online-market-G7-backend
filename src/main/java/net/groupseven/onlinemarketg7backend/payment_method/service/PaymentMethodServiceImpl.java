@@ -1,10 +1,11 @@
 package net.groupseven.onlinemarketg7backend.payment_method.service;
 
-import com.online.market.payment_method.dto.PaymentMethodDto;
-import com.online.market.payment_method.dto.SavePaymentMethodDto;
-import com.online.market.payment_method.model.PaymentMethod;
-import com.online.market.payment_method.repository.PaymentMethodRepository;
+
 import lombok.RequiredArgsConstructor;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
+import net.groupseven.onlinemarketg7backend.payment_method.dto.SavePaymentMethodDto;
+import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethod;
+import net.groupseven.onlinemarketg7backend.payment_method.repository.PaymentMethodRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
