@@ -1,9 +1,8 @@
 package net.groupseven.onlinemarketg7backend.product_image.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.product.model.Product;
 
 import javax.persistence.*;
@@ -11,8 +10,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "product_images")
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 public class Image implements Serializable {
 

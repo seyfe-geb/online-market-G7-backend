@@ -19,16 +19,16 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service @RequiredArgsConstructor
-public class UserServiceImpl implements UserService, UserDetailsService {
+public class UserServiceImpl implements UserService{
 
     private final UserRepository repository;
     private final RoleRepository roleRepository;
     private final ShoppingCartRepository cartRepository;
 
     private final ModelMapper modelMapper;
-    private final PasswordEncoder passwordEncoder;
+//    private final PasswordEncoder passwordEncoder;
 
-    private final LoggedInUserService loggedInUserService;
+//    private final LoggedInUserService loggedInUserService;
 
     @Override
     public List<UserDto> findAll() {
@@ -44,7 +44,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Override
     public UserProfileDto findProfile() {
-        return modelMapper.map(repository.findById(loggedInUserService.getUserId()).orElse(null), UserProfileDto.class);
+        return null;//modelMapper.map(repository.findById(loggedInUserService.getUserId()).orElse(null), UserProfileDto.class);
     }
 
     @Override
@@ -60,7 +60,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             dto.setRoles(new HashSet<>());
 
         User user = repository.save(modelMapper.map(dto, User.class));
-        user.setPassword(passwordEncoder.encode(dto.getPassword()));
+        //user.setPassword(passwordEncoder.encode(dto.getPassword()));
 
         if (!dto.getRoles().isEmpty()) {
             user.setAuthorities(new HashSet<>(3));
@@ -82,10 +82,10 @@ public class UserServiceImpl implements UserService, UserDetailsService {
             user.setEmail(dto.getEmail());
 
         if(!dto.getFname().isEmpty())
-            user.setFname(dto.getFname());
+            user.setFirstName(dto.getFname());
 
         if(!dto.getLname().isEmpty())
-            user.setLname(dto.getLname());
+            user.setLastName(dto.getLname());
 
         return modelMapper.map(repository.save(user), UserDto.class);
     }
@@ -131,9 +131,9 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         return modelMapper.map(repository.save(user), UserDto.class);
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return repository.findByUsername(username)
-                .orElseThrow(() -> new UsernameNotFoundException("User with username - " + username + ", not found "));
-    }
+//    @Override
+//    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+//        return repository.findByUsername(username)
+//                .orElseThrow(() -> new UsernameNotFoundException("User with username - " + username + ", not found "));
+//    }
 }

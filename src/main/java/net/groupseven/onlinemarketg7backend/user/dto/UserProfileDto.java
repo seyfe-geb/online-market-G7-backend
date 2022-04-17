@@ -1,10 +1,7 @@
 package net.groupseven.onlinemarketg7backend.user.dto;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import net.groupseven.onlinemarketg7backend.address.dto.AddressDto;
 import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
 
@@ -12,8 +9,7 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
+@Data
 public class UserProfileDto extends UserDto{
     private String username;
 

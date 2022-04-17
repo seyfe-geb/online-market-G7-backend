@@ -17,9 +17,9 @@ public class CreateLightUserDto {
     private String username;
 
     @NotBlank
-    private String fname;
+    private String firstName;
     @NotBlank
-    private String lname;
+    private String lastName;
 
     @Email
     private String email;

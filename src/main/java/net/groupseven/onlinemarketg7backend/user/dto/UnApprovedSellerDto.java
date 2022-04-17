@@ -14,8 +14,8 @@ import java.util.Date;
 public class UnApprovedSellerDto {
     private long id;
 
-    private String fname;
-    private String lname;
+    private String firstName;
+    private String lastName;
 
     private String email;
 

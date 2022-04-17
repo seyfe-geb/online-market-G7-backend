@@ -1,10 +1,8 @@
 package net.groupseven.onlinemarketg7backend.user.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import net.groupseven.onlinemarketg7backend.address.model.Address;
 import net.groupseven.onlinemarketg7backend.payment_method.model.PaymentMethod;
 import net.groupseven.onlinemarketg7backend.role.model.Role;
 import net.groupseven.onlinemarketg7backend.user.dto.UnApprovedSellerDto;
@@ -16,6 +14,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -24,24 +23,9 @@ import java.util.Set;
 @Table(name = "users")
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
-@NamedNativeQuery(name = "findSellersByApproved",
-        query  = "SELECT u.id, u.fname, u.lname, u.email, u.created_at, u.modified_at"
-                + " FROM users u INNER JOIN user_roles ur ON  ur.user_id = u.id"
-                + " INNER JOIN roles r ON ur.role_id = r.id"
-                + " WHERE u.is_approved_seller = ?1 and r.authority = '" + Role.SELLER + "'",
-        resultSetMapping  = "mapping_unapproved_seller_dto")
-@SqlResultSetMapping(name = "mapping_unapproved_seller_dto",
-        classes = @ConstructorResult(targetClass = UnApprovedSellerDto.class,
-                columns = {@ColumnResult(name = "id", type = Long.class),
-                        @ColumnResult(name = "fname", type = String.class),
-                        @ColumnResult(name = "lname", type = String.class),
-                        @ColumnResult(name = "email", type = String.class),
-                        @ColumnResult(name = "created_at", type = Date.class),
-                        @ColumnResult(name = "modified_at", type = Date.class)}))
+@Data
 
-public class User implements UserDetails, Serializable {
+public class User implements Serializable { //UserDetails
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -55,24 +39,23 @@ public class User implements UserDetails, Serializable {
     private String email;
 
     @NotNull
-    private String fname;
+    @Column(name="first_name")
+    private String firstName;
+
     @NotNull
-    private String lname;
+    @Column(name = "last_name")
+    private String lastName;
 
     private boolean enabled = true;
 
     @Column(name = "is_approved_seller")
     private boolean isApprovedSeller = false;
 
-    @CreatedDate()
-    @Generated(GenerationTime.INSERT)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date createdAt;
+    @Column(name = "created_at")
+    private LocalDate createdAt;
 
-    @LastModifiedDate
-    @Generated(GenerationTime.INSERT)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date modifiedAt;
+    @Column(name = "modified_at")
+    private LocalDate modifiedAt;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     @JsonManagedReference
@@ -95,18 +78,18 @@ public class User implements UserDetails, Serializable {
         this.enabled = true;
     }
 
-    @Override
-    public boolean isAccountNonExpired() {
-        return enabled;
-    }
-
-    @Override
-    public boolean isAccountNonLocked() {
-        return enabled;
-    }
-
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return enabled;
-    }
+//    @Override
+//    public boolean isAccountNonExpired() {
+//        return enabled;
+//    }
+//
+//    @Override
+//    public boolean isAccountNonLocked() {
+//        return enabled;
+//    }
+//
+//    @Override
+//    public boolean isCredentialsNonExpired() {
+//        return enabled;
+//    }
 }

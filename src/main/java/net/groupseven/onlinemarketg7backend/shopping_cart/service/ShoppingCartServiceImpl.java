@@ -19,7 +19,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 
     private final ShoppingCartRepository repository;
     private final ModelMapper modelMapper;
-    private final LoggedInUserService loggedInUserService;
+    //private final LoggedInUserService loggedInUserService;
 
     @Override
     public ShoppingCartDto findCart() {
