@@ -6,7 +6,6 @@ import net.groupseven.onlinemarketg7backend.order.dto.OrderDto;
 import net.groupseven.onlinemarketg7backend.order.dto.SaveOrderDto;
 import net.groupseven.onlinemarketg7backend.order.model.OrderStatus;
 import net.groupseven.onlinemarketg7backend.order.service.OrderService;
-import net.groupseven.onlinemarketg7backend.role.model.Role;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +19,7 @@ public class OrderController {
     private final OrderService service;
 
     @GetMapping
-    //@PreAuthorize("hasRole('" + Role.ADMIN + "')")
+   // @PreAuthorize("hasRole('" + Role.ADMIN + "')")
     public List<OrderDto> getAll(){
         return service.findAll();
     }

@@ -52,7 +52,7 @@ public class FollowServiceImpl implements FollowService{
     @Override
     public void unfollow(long followerId, long followeeId) throws ValidationException {
         if (loggedInUserService.getUserId() != followerId)
-            throw new ValidationException("This item you are trying to delte does not belong to you");
+            throw new ValidationException("This item you are trying to delete does not belong to you");
 
         Follow follow = repository.findByFollowerIdAndFolloweeId(followerId, followeeId).get();
         repository.deleteById(follow.getId());

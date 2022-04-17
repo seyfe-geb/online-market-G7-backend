@@ -1,7 +1,6 @@
 package net.groupseven.onlinemarketg7backend.reward.controller;
 
 
-//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import net.groupseven.onlinemarketg7backend.reward.dto.RewardDto;
 import net.groupseven.onlinemarketg7backend.reward.dto.SaveRewardDto;

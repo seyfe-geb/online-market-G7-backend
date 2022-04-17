@@ -1,11 +1,11 @@
 package net.groupseven.onlinemarketg7backend.review.controller;
 
-//import io.swagger.v3.oas.annotations.tags.Tag;
+
 import lombok.RequiredArgsConstructor;
 import net.groupseven.onlinemarketg7backend.review.dto.LightReviewDto;
 import net.groupseven.onlinemarketg7backend.review.dto.ReviewDto;
+import net.groupseven.onlinemarketg7backend.review.model.Review;
 import net.groupseven.onlinemarketg7backend.review.service.ReviewService;
-import net.groupseven.onlinemarketg7backend.role.model.Role;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,13 +24,13 @@ public class ReviewController {
     }
 
     @GetMapping("/get-unapproved-reviews")
-    //@PreAuthorize("hasRole('" + Role.ADMIN + "')")
-    public List<ReviewDto> getUnapprovedReviews(){
+//    @PreAuthorize("hasRole('" + Role.ADMIN + "')")
+    public List<Review> getUnapprovedReviews(){
         return reviewService.findAllByApproved(false);
     }
 
     @PutMapping("/approve-review/{id}")
-    public ReviewDto approveReview(@PathVariable("id") long id){
+    public Review approveReview(@PathVariable("id") long id){
         return reviewService.approveById(id);
     }
 

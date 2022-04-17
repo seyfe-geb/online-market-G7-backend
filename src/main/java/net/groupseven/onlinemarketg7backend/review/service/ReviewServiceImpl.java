@@ -62,7 +62,7 @@ public class ReviewServiceImpl implements ReviewService{
     }
 
     @Override
-    public ReviewDto approveById(long id) {
+    public Review approveById(long id) {
         Review review = repository.getById(id);
         review.setApproved(true);
         return modelMapper.map(repository.save(review), ReviewDto.class);

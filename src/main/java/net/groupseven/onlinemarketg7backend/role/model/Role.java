@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+
 import javax.persistence.*;
 
 @Entity
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Role {//implements GrantedAuthority {
+public class Role{ //implements GrantedAuthority {
 
 	public static final String BUYER = "BUYER";
 	public static final String SELLER = "SELLER";

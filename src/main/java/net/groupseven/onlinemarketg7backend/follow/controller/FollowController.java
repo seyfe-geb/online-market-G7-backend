@@ -1,7 +1,6 @@
 package net.groupseven.onlinemarketg7backend.follow.controller;
 
 
-//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import net.groupseven.onlinemarketg7backend.follow.dto.CreateFollowerDto;
 import net.groupseven.onlinemarketg7backend.follow.dto.FollowDto;

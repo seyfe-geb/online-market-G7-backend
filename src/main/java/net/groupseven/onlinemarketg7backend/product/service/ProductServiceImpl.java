@@ -9,6 +9,8 @@ import net.groupseven.onlinemarketg7backend.product.dto.SaveProductDto;
 import net.groupseven.onlinemarketg7backend.product.model.Product;
 import net.groupseven.onlinemarketg7backend.product.repository.ProductRepository;
 import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
+import net.groupseven.onlinemarketg7backend.product_image.model.Image;
+import net.groupseven.onlinemarketg7backend.user.model.User;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,6 @@
 package net.groupseven.onlinemarketg7backend.product_image.controller;
 
 
-//import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
 import net.groupseven.onlinemarketg7backend.product_image.service.ImageService;

@@ -1,12 +1,10 @@
 package net.groupseven.onlinemarketg7backend.payment_method.service;
 
 
-
 import net.groupseven.onlinemarketg7backend.payment_method.dto.PaymentMethodDto;
 import net.groupseven.onlinemarketg7backend.payment_method.dto.SavePaymentMethodDto;
 
 import java.util.List;
-
 
 public interface PaymentMethodService {
     List<PaymentMethodDto> findAll();

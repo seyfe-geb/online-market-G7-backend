@@ -1,7 +1,6 @@
 package net.groupseven.onlinemarketg7backend.follow.service;
 
 
-
 import net.groupseven.onlinemarketg7backend.follow.dto.CreateFollowerDto;
 import net.groupseven.onlinemarketg7backend.follow.dto.FollowDto;
 

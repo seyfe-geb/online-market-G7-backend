@@ -1,15 +1,16 @@
 package net.groupseven.onlinemarketg7backend.product.dto;
 
 
+import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import net.groupseven.onlinemarketg7backend.product_image.dto.ImageDto;
 
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
+
 
 @AllArgsConstructor
 @NoArgsConstructor

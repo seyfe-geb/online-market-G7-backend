@@ -17,6 +17,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import javax.transaction.Transactional;
 import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.stream.Collectors;
